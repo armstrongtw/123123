@@ -1,0 +1,9 @@
+import numpy as np
+import pandas as pd
+
+df = pd.DataFrame(np.random.rand(10))
+try:
+    df.to_csv('./test_df.csv')
+except PermissionError:
+    pass
+
